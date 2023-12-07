@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MenuButtonFunctions : MonoBehaviour
 {
-    public void OnPlayButtonClicked()
+    
+    public void OnNewGameButtonClicked()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Difficulty");
     }
@@ -21,7 +23,7 @@ public class MenuButtonFunctions : MonoBehaviour
     
     public void OnExitButtonClicked()
     {
-        Debug.Log("Quit button clicked");
+        Application.Quit();
     }
     
     public void OnBackButtonClicked()
@@ -45,18 +47,10 @@ public class MenuButtonFunctions : MonoBehaviour
         }
     }
     
-    public void OnEasyButtonClicked()
+    public void OnPlayButtonClicked()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
-    }
-    
-    public void OnMediumButtonClicked()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
-    }
-    
-    public void OnHardButtonClicked()
-    {
+        Debug.Log("Player name: " + UIManager.Instance.GetPlayerName());
+        Debug.Log("Difficulty: " + UIManager.Instance.difficulty);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
 }

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 198557070}
   - component: {fileID: 198557069}
   m_Layer: 5
-  m_Name: EasyButton (1)
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increasedSize: 1.2
-  normalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &198557070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +220,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2096985283}
         m_TargetAssemblyTypeName: MenuButtonFunctions, Assembly-CSharp
         m_MethodName: OnPlayButtonClicked
         m_Mode: 1
@@ -1336,8 +1335,8 @@ GameObject:
   - component: {fileID: 1056015186}
   - component: {fileID: 1056015189}
   m_Layer: 5
-  m_Name: ChallengingButton
-  m_TagString: Untagged
+  m_Name: Challenging
+  m_TagString: DiffBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1465,11 +1464,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056015184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82042bebeaf81c4d953f08717d94b63, type: 3}
+  m_Script: {fileID: 11500000, guid: b88770b964ea1854ba497c6e9ff75aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increasedSize: 1.2
-  normalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1130008914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1966,8 +1963,8 @@ GameObject:
   - component: {fileID: 1439907998}
   - component: {fileID: 1439908001}
   m_Layer: 5
-  m_Name: EasyButton
-  m_TagString: Untagged
+  m_Name: Easy
+  m_TagString: DiffBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2095,11 +2092,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1439907996}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82042bebeaf81c4d953f08717d94b63, type: 3}
+  m_Script: {fileID: 11500000, guid: b88770b964ea1854ba497c6e9ff75aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increasedSize: 1.2
-  normalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1599323383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2239,7 @@ RectTransform:
   - {fileID: 816373117}
   - {fileID: 198557068}
   - {fileID: 1380150651}
+  - {fileID: 2096985282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2399,8 +2395,8 @@ GameObject:
   - component: {fileID: 1953255029}
   - component: {fileID: 1953255032}
   m_Layer: 5
-  m_Name: LegendButton
-  m_TagString: Untagged
+  m_Name: Legend
+  m_TagString: DiffBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2528,11 +2524,93 @@ MonoBehaviour:
   m_GameObject: {fileID: 1953255027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c82042bebeaf81c4d953f08717d94b63, type: 3}
+  m_Script: {fileID: 11500000, guid: b88770b964ea1854ba497c6e9ff75aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increasedSize: 1.2
-  normalColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &2096985281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096985282}
+  - component: {fileID: 2096985283}
+  - component: {fileID: 2096985284}
+  - component: {fileID: 2096985285}
+  m_Layer: 5
+  m_Name: script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2096985282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096985281}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1667047922}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2096985283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096985281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48b3b34da6240b48b35fb35f3aa4d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2096985284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096985281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c235b3d03f913d4d8ac3500080a9dbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1439907998}
+  - {fileID: 1056015186}
+  - {fileID: 1953255029}
+  defaultButton: {fileID: 1056015186}
+  increasedSize: 1.5
+--- !u!114 &2096985285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096985281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c3a49d495d075499cadfb3f51df94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Player
+  difficulty: Challenging
+  score: 0
+  nameInputField: {fileID: 1380150652}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

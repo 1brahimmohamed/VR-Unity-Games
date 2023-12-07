@@ -6,8 +6,7 @@ using TMPro;
 
 public class MenuButton :  MonoBehaviour, 
     IPointerEnterHandler, 
-    IPointerExitHandler,
-    IPointerClickHandler
+    IPointerExitHandler
 {
      public float increasedSize = 1.2f; // Set the increased font size multiplier
         
@@ -54,37 +53,15 @@ public class MenuButton :  MonoBehaviour,
                 }
             }
         }
-        
+
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (_buttonText != null )
+            if (_buttonText != null)
             {
                 if (!_isSelected)
                 {
                     DecreaseFontSize();
                     ResetColor();
-                }
-            }
-        }
-        
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            if (_buttonText != null)
-            {
-                if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Difficulty")
-                {
-                    if (!_isSelected)
-                    {
-                        IncreaseFontSize();
-                        ChangeColor();
-                        _isSelected = true;
-                    }
-                    else
-                    {
-                        DecreaseFontSize();
-                        ResetColor();
-                        _isSelected = false;
-                    }
                 }
             }
         }
