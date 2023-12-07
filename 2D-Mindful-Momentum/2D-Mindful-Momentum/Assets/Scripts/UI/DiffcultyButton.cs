@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 public class DiffcultyButton : MonoBehaviour, IPointerClickHandler
 {
+    
+    void Start()
+    {
+        UIManager.difficulty = "Challenging";
+    }
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         // Set the difficulty

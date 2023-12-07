@@ -61,7 +61,7 @@ public class DiffcultyButtonsManager : MonoBehaviour
         if (button != _selectedButton)
         {
             _selectedButton = button;
-            UIManager.Instance.SetDifficulty(button.name);
+            UIManager.difficulty = button.name;
             UpdateTheButtons();
         }
     }
@@ -73,7 +73,6 @@ public class DiffcultyButtonsManager : MonoBehaviour
         {
             if (button == _selectedButton)
             { 
-                Debug.Log("Selected button found"); 
                 IncreaseFontSize(button); 
                 ChangeColor(button, Color.white);
             }

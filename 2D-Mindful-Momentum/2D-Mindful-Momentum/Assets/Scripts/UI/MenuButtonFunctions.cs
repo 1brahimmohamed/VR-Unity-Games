@@ -49,8 +49,19 @@ public class MenuButtonFunctions : MonoBehaviour
     
     public void OnPlayButtonClicked()
     {
-        Debug.Log("Player name: " + UIManager.Instance.GetPlayerName());
-        Debug.Log("Difficulty: " + UIManager.Instance.difficulty);
+        UIManager.Instance.GetPlayerNameFromInputField();
+        Debug.Log("Player name: " + UIManager.playerName);
+        Debug.Log("Difficulty: " + UIManager.difficulty);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+    }
+    
+    public void OnMainMenuButtonClicked()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
+    
+    public void OnPlayAgainButtonClicked()
+    {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
 }

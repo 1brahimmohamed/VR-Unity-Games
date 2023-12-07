@@ -7,8 +7,8 @@ public class UIManager : MonoBehaviour
 {
    public static UIManager Instance; // Singleton instance
    
-   public string playerName = "Player";
-   public string difficulty = "Challenging";
+   public static string playerName = "Player";
+   public static string difficulty = "Challenging";
    public int score = 0;
    
    public TMP_InputField nameInputField;
@@ -30,15 +30,43 @@ public class UIManager : MonoBehaviour
     {
          playerName = name;
     }
+
+    public void  GetPlayerNameFromInputField()
+    {
+        if (nameInputField != null)
+        {
+            if (nameInputField.text == "")
+            {
+                playerName = "Player";
+            }
+            
+            else playerName = nameInputField.text;
+        }
+    }
+
+    public string GetPlayerName()
+    {
+        return playerName;
+    }
     
     public void SetDifficulty(string diff)
     {
         difficulty = diff;
     }
     
+    public string GetDifficulty()
+    {
+        return difficulty;
+    }
+    
     public void SetScore(int newScore)
     {
         score = newScore;
+    }
+    
+    public int GetScore()
+    {
+        return score;
     }
     
     public void ResetScore()
@@ -51,20 +79,6 @@ public class UIManager : MonoBehaviour
         score += amount;
     }
     
-    public string GetPlayerName()
-    {
 
-        if (nameInputField != null)
-        {
-            if (nameInputField.text == "")
-            {
-                playerName = "Player";
-            }
-            
-            else playerName = nameInputField.text;
-        }
-        
-        return playerName;
-    }
     
 }
