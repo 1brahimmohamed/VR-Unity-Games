@@ -1,0 +1,4 @@
+{ "TOKEN_ID":"<enter your POE token>",
+"ACCESS_KEY":"<enter your AWS POLLY access key>",
+"SECRET_ACCESS_KEY":"<enter your AWS POLLY secret access key>"
+}
